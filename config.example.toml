@@ -1,0 +1,31 @@
+vault_id = "obsidian-vault-1"
+listen_addr = "0.0.0.0:15000"
+
+vault_path = ""
+state_dir = ".vaultsync"
+ignore_file = ".vaultsyncignore"
+
+# Peers (por ZeroTier). Puedes poner el peer Windows y el Linux según el equipo.
+# En Linux: apuntas al Windows. En Windows: apuntas al Linux.
+peer_addr = "10.0.0.2:15000"
+// prvisional en si estas cosas pueden cambiar en  
+// y los permisos ten en cunenta esto
+/7 el servidor puede ser iun contenerdor docker
+# Pinning: fingerprint SHA256 (hex) del certificado del peer.
+# Déjalo vacío al principio; el programa te lo imprimirá para que lo pegues aquí.
+peer_cert_pin_sha256_hex = ""
+
+# Retención
+version_retention_days = 50
+backup_interval_days = 30
+scan_interval_seconds = 5
+# En teoria en W principal 
+trash_path = "C:/sistema/borrado_30min"
+trash_retention_minutes = 30
+trash_scan_interval_seconds = 300
+is_primary_node = true
+# Linux ruta sin configurar 
+trash_path = "/tmp/vault_pending_trash"
+trash_retention_minutes = 30
+trash_scan_interval_seconds = 300
+is_primary_node = false
